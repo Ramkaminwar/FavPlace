@@ -1,0 +1,214 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.favourite_places"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+16-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+17-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-79
+17-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-76
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+23
+24    <queries>
+24-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+25
+26        <!-- Needs to be explicitly declared on Android R+ -->
+27        <package android:name="com.google.android.apps.maps" />
+27-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+27-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+28    </queries>
+29
+30    <permission
+30-->[androidx.core:core:1.10.1] /Users/ramk./.gradle/caches/transforms-3/ed449e2a34aa0a0bfb745675e88399fd/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+31        android:name="com.example.favourite_places.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.10.1] /Users/ramk./.gradle/caches/transforms-3/ed449e2a34aa0a0bfb745675e88399fd/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.10.1] /Users/ramk./.gradle/caches/transforms-3/ed449e2a34aa0a0bfb745675e88399fd/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.example.favourite_places.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.10.1] /Users/ramk./.gradle/caches/transforms-3/ed449e2a34aa0a0bfb745675e88399fd/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.10.1] /Users/ramk./.gradle/caches/transforms-3/ed449e2a34aa0a0bfb745675e88399fd/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+35
+36    <application
+37        android:name="android.app.Application"
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.10.1] /Users/ramk./.gradle/caches/transforms-3/ed449e2a34aa0a0bfb745675e88399fd/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+41        android:label="favourite_places" >
+42        <activity
+43            android:name="com.example.favourite_places.MainActivity"
+44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+45            android:exported="true"
+46            android:hardwareAccelerated="true"
+47            android:launchMode="singleTop"
+48            android:theme="@style/LaunchTheme"
+49            android:windowSoftInputMode="adjustResize" >
+50
+51            <!--
+52                 Specifies an Android theme to apply to this Activity as soon as
+53                 the Android process has started. This theme is visible to the user
+54                 while the Flutter UI initializes. After that, this theme continues
+55                 to determine the Window background behind the Flutter UI.
+56            -->
+57            <meta-data
+58                android:name="io.flutter.embedding.android.NormalTheme"
+59                android:resource="@style/NormalTheme" />
+60
+61            <intent-filter>
+62                <action android:name="android.intent.action.MAIN" />
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+65            </intent-filter>
+66        </activity>
+67        <!--
+68             Don't delete the meta-data below.
+69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+70        -->
+71        <meta-data
+72            android:name="flutterEmbedding"
+73            android:value="2" />
+74
+75        <provider
+75-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+76            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+76-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+77            android:authorities="com.example.favourite_places.flutter.image_provider"
+77-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+78            android:exported="false"
+78-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+79            android:grantUriPermissions="true" >
+79-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+80            <meta-data
+80-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+82                android:resource="@xml/flutter_image_picker_file_paths" />
+82-->[:image_picker_android] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+83        </provider>
+84
+85        <service
+85-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
+86            android:name="com.lyokone.location.FlutterLocationService"
+86-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-71
+87            android:enabled="true"
+87-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
+88            android:exported="false"
+88-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+89            android:foregroundServiceType="location" /> <!-- Needs to be explicitly declared on P+ -->
+89-->[:location] /Users/ramk./Desktop/Bugs/Flutter_project/favourite_places/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
+90        <uses-library
+90-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+91            android:name="org.apache.http.legacy"
+91-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+92            android:required="false" />
+92-->[com.google.android.gms:play-services-maps:18.2.0] /Users/ramk./.gradle/caches/transforms-3/64829ba65b05948d559721367eb1e9c5/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+93
+94        <activity
+94-->[com.google.android.gms:play-services-base:18.1.0] /Users/ramk./.gradle/caches/transforms-3/5fe0ebbe77ac2f965c744e827de9fb8b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+95            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+95-->[com.google.android.gms:play-services-base:18.1.0] /Users/ramk./.gradle/caches/transforms-3/5fe0ebbe77ac2f965c744e827de9fb8b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+96            android:exported="false"
+96-->[com.google.android.gms:play-services-base:18.1.0] /Users/ramk./.gradle/caches/transforms-3/5fe0ebbe77ac2f965c744e827de9fb8b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.android.gms:play-services-base:18.1.0] /Users/ramk./.gradle/caches/transforms-3/5fe0ebbe77ac2f965c744e827de9fb8b/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ramk./.gradle/caches/transforms-3/4a80ee9fd8d09a6d44776f9cd2f90623/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ramk./.gradle/caches/transforms-3/4a80ee9fd8d09a6d44776f9cd2f90623/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:18.1.0] /Users/ramk./.gradle/caches/transforms-3/4a80ee9fd8d09a6d44776f9cd2f90623/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+102
+103        <uses-library
+103-->[androidx.window:window:1.0.0-beta04] /Users/ramk./.gradle/caches/transforms-3/8b91368fc987e97788ac32b381eff1c9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+104            android:name="androidx.window.extensions"
+104-->[androidx.window:window:1.0.0-beta04] /Users/ramk./.gradle/caches/transforms-3/8b91368fc987e97788ac32b381eff1c9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+105            android:required="false" />
+105-->[androidx.window:window:1.0.0-beta04] /Users/ramk./.gradle/caches/transforms-3/8b91368fc987e97788ac32b381eff1c9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+106        <uses-library
+106-->[androidx.window:window:1.0.0-beta04] /Users/ramk./.gradle/caches/transforms-3/8b91368fc987e97788ac32b381eff1c9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+107            android:name="androidx.window.sidecar"
+107-->[androidx.window:window:1.0.0-beta04] /Users/ramk./.gradle/caches/transforms-3/8b91368fc987e97788ac32b381eff1c9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+108            android:required="false" />
+108-->[androidx.window:window:1.0.0-beta04] /Users/ramk./.gradle/caches/transforms-3/8b91368fc987e97788ac32b381eff1c9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+109
+110        <provider
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+111            android:name="androidx.startup.InitializationProvider"
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
+112            android:authorities="com.example.favourite_places.androidx-startup"
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
+113            android:exported="false" >
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
+114            <meta-data
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+115                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+116                android:value="androidx.startup" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+117        </provider>
+118
+119        <receiver
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+120            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+121            android:directBootAware="false"
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+122            android:enabled="true"
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+123            android:exported="true"
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+124            android:permission="android.permission.DUMP" >
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+126                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+129                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+130            </intent-filter>
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+132                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+135                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ramk./.gradle/caches/transforms-3/25d81959fa0c7822bb41c8c42b31653e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+136            </intent-filter>
+137        </receiver>
+138    </application>
+139
+140</manifest>
